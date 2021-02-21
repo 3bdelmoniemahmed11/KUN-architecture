@@ -1,0 +1,697 @@
+* {
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+body {
+    font-family: Montserrat;
+    padding-top: 61px;
+    overflow-x: hidden;
+}
+
+/*start navbar*/
+.navbar {
+    border-bottom: 3px solid white;
+    z-index:9999;
+}
+.navbar .navbar-nav 
+{
+    margin-right: 20px;
+}
+.navbar-brand .bg-screen-logo
+{
+    position: absolute;
+    padding: 10px;
+    background: #212429;
+    width: 81px;
+    left: 7.5%;
+    top: 8px;
+}
+.navbar-brand .sm-screen-logo
+{
+    display: none;
+}
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+.navbar-nav .nav-item .nav-link {
+    font-weight: 380;
+    font-size: 20px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #c5a47e !important;
+}
+.navbar-nav .nav-item.active .nav-link
+{
+   color:#c5a47e !important;
+}
+
+.navbar .languages a
+{
+     margin-right:9px;
+     text-decoration: none !important;
+}
+.navbar .languages a img
+{
+   height:20px;
+   width: 25px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+
+}
+.navbar .languages a img:hover
+{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
+/*end navbar*/
+/*start carousel*/
+.Home_slider .carousel-item {
+
+    height:calc(100vh - 64.818px);
+}
+.Home_slider .carousel-item img {
+    height: 100%;
+    background: no-repeat center center scroll;
+    background-size: cover;
+   
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3rem !important;
+    height: 3rem !important;
+}
+.carousel-indicators
+{
+    margin-bottom: 2.3rem !important;
+}
+.carousel-indicators li {
+    width: 50px !important;
+    height: 6px !important;
+}
+
+/*end carousel
+
+/*media queries section-1*/
+@media(max-width:992px)
+{
+    .navbar-brand .bg-screen-logo
+    {
+        display: none;
+    }
+    .navbar-brand .sm-screen-logo
+    {
+        display: block;
+    }   
+}
+/*services*/
+.services {
+    padding:150px 0px 20px 0px;
+    background: url("../Images/bg-Image/missson-bg-1.jpg");
+}
+.services .services-title
+{
+    font-size: 90px !important;
+    margin-bottom:70px;
+    line-height:1;
+    font-weight: 375 !important;
+    font-family:myFirstFont;
+}
+.services .services-text
+{
+    margin-bottom:50px;
+    margin-top: 70px;
+}
+.services img {
+    position: relative;
+    height:430px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    background: #e2e2e2;
+    box-shadow: 5px 5px 5px rgb(68, 67, 67);
+}
+
+.services .btn_services {
+    font-weight: 400 !important;
+    font-size: 16px;
+    padding: 8px 25px;
+    border: 2px solid #000000;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    color: #000000 !important;
+    transition: all 0.5s ease-in-out;
+}
+.services .btn_services button
+{
+    background: transparent;
+    border: none;
+}
+
+.services .btn_services:hover {
+    background: rgb(219, 219, 219);
+}
+/*services*/
+/*our misson start */
+.our-misson {
+    background: #212529;
+}
+
+.our-misson .misson-bg img {
+    width: 100%;
+    height: 100%;
+}
+
+.gold-title {
+    color: #c5a47e;
+    font-weight: 300 !important;
+    margin-bottom: 2.5%;
+    font-size: 50px !important;
+    line-height: 50px;
+    flex-wrap: nowrap;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Gilroy-Light.otf);
+  }
+  
+
+.our-misson .misson-section {
+    margin-top: 9%;
+}
+
+.our-misson .misson-des{
+    font-weight: 400;
+    font-size: 23px;
+    color: #707070;
+    width: 90%;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+/*our misson end */
+
+@media(min-width:992px) and (max-width:1204px)
+{
+    .services .services-title
+    {
+        font-size: 75px !important;
+
+    }
+    .services img
+    {
+        height: 320px !important;
+    }
+}
+@media(max-width:1024px)
+{
+    .services .services-title
+    {
+        font-size: 70px !important;
+
+    }
+}
+@media(max-width:562px)
+{
+    .services .services-title
+    {
+        font-size: 55px !important;
+
+    }
+}
+/*start projects*/
+
+.projects {
+    padding: 150px 40px 10px 40px ;
+    background: url('../Images/bg-Image/project-bg.png');
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.projects .img-holder {
+    position: relative;
+    overflow: hidden;
+    height: 230px;
+    border-radius:5px;
+    box-shadow:5px 5px 5px #e1dfdf;
+}
+
+.projects .img-holder .project_background {
+    width: 100%;
+    height: 100%;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.projects .img-holder:hover .project_background {
+    -ms-transform: scale(1.3);
+    /* IE 9 */
+    -webkit-transform: scale(1.3);
+    /* Safari 3-8 */
+    transform: scale(1.3);
+}
+
+.bottom-border::after {
+    display: block;
+    border-top: 7px solid #fff;
+    height: 9px;
+    content: " ";
+    background-color: #c5a47e;
+}
+
+.background-hover {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: #fff 0.2s, opacity 0.5s;
+    -moz-transition: #fff 0.2s, opacity 0.5s;
+    transition: #fff 0.2s, opacity 0.5s;
+}
+
+.background-hover:hover {
+    cursor: pointer;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+.background-hover:hover .project-logo .logo_img {
+    bottom: 40px;
+    opacity: 1;
+}
+
+.project-logo {
+    height: 100%;
+    width: 100%;
+    bottom: 50%;
+}
+.project-logo .logo_img {
+    position: absolute;
+    left: 20%;
+    z-index: 99;
+    width: 60%;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, bottom 0.6s;
+    -moz-transition: opacity 0.5s, bottom 0.6s;
+    transition: opacity 0.5s, bottom 0.6s;
+    bottom: 0px;
+}
+.project-bg {
+    background-size: 100% 100%;
+    height: 491px;
+    width: 100%;
+}
+
+.project_details {
+    padding: 40px;
+}
+
+.project_details p {
+    font-size: 13px;
+    color: #000000CC;
+    margin-bottom: 21px;
+}
+
+.project-images img {
+    width: 100%;
+    height: 729px;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.project-images .row::after {
+    display: block;
+    border-top: 2px solid #fff;
+    height: 4px;
+    content: " ";
+    background-color: #c5a47e;
+}
+
+.button {
+    display: inline-block;
+    background-color: #212429;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    text-decoration: none;
+  }
+  .button::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f077';
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 900;
+   
+  }
+  .button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  .button:active {
+    background-color: #555;
+  }
+  .button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  @media (max-width: 767.98px) {
+    
+    
+        .background-hover:hover .project-logo .logo_img {
+          
+            opacity: 1 !important;
+            bottom: 40px !important;
+        }
+        .project-logo .logo_img
+        {
+            width:50% !important;
+            left:25% !important;
+            bottom: 50px !important;
+        }
+}
+
+  @media(max-width:767px)
+  {
+    .project-images img
+    {
+        height: 450px !important;
+    }
+    .project-bg
+    {
+        height:400px !important;
+    }
+  }
+  @media(max-width:764px)
+  {
+  
+     
+  }
+/*end project */
+/*start team members*/
+.Founders 
+{
+    padding-top:100px
+}
+.Founders .Founders-title ,.contact-us .contact-title{
+    color: #c5a47e;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 39px;
+    font-family: myFirstFont;
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+}
+
+.Founders .team {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    max-height: 580px;
+    height: 470px;
+}
+
+.Founders .team-img img {
+    max-width: 100%;
+    height: 360px;
+}
+
+.Founders .team-details {
+    position: relative;
+    bottom: 0;
+    background: #fff;
+}
+
+.Founders .team-details .team-info .team-name {
+    color: #282828;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    font-size: 13px;
+}
+
+.Founders .team-details .team-info .team-postion {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.Founders .team .team-paragraph {
+    width: 50%;
+    margin: auto;
+}
+
+.team:hover .team-img {
+    transform: scale(1.15);
+} 
+.team:hover .team-details {
+    bottom: 150px;
+}
+
+.team-members .team img {
+    width: 100%;
+}
+
+.team-members .team {
+    width: 80% !important;
+}
+
+.team-members .team .team-paragraph {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #c5a47e !important;
+    font-size: 30px !important;
+}
+
+
+
+/*end team members*/
+/*contact us*/
+.contact-us {
+    color: #b3b0b0;
+    font-weight: 200;
+    font-size: 20px;
+    padding:140px 0px 20px 0px;
+}
+.contact-us .social-conent {
+    text-align: center;
+    padding:10px;
+    margin-top: 15px;
+}
+
+.contact-us .social-conent a {
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    display: inline-block;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: center;
+    width: 2.25rem;
+}
+
+.contact-us .social-conent a:hover
+{
+    background: #c4c4c4;
+    cursor: pointer;
+}
+.contact-us .information
+{
+    text-align: left;
+}
+.contact-us .information .svg-inline--fa
+{
+    font-size: 30px;
+    margin-right:10px;
+    color: #c5a47e;
+}
+.contact-us .information span:hover
+{
+    color: #b48e62;
+    cursor: pointer;
+}
+
+.map {
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%);
+    z-index: -1;
+    opacity: .8;
+}
+.map img {
+    -webkit-animation: moveleftbounce 5s linear infinite;
+    animation: moveleftbounce 5s linear infinite;
+}
+
+ @media (min-width: 576px) and (max-width: 1199.98px) { 
+     .map{
+           display: none;
+     }
+  }
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    width: 100%;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    position:absolute;
+}
+@-webkit-keyframes  moveleftbounce {
+    0% {
+      -webkit-transform: translateX(0%);
+      transform:translateX(0%);
+    }
+    50% {
+        -webkit-transform: translateX(-10%);
+        transform:translateX(-10%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+  }
+@keyframes moveleftbounce {
+    0%{
+      -webkit-transform: translateX(0%);
+      transform:translateX(0%);
+    }
+    50% {
+        -webkit-transform: translateX(-10%);
+        transform: translateX(-10%);
+    }
+    100% {
+        -webkit-transform:translateX(0%);
+        transform:translateX(0%);
+    }
+  }
+
+/*end contact us*/
+/*start fotter*/
+.footer
+{
+    background:#212529;
+    color: #fff;
+    padding:5px;
+    letter-spacing:5px;
+    font-size: 7px;
+    font-family: myFirstFont;
+    position: fixed;
+    min-width: 100%;
+    height: auto;
+    z-index: 1000000000000;
+    text-align: center;
+    bottom: 0;
+}
+
+/*end footter*/
+/*base style*/
+.mb-10 {
+    margin-bottom: 15px;
+}
+.mt-60
+{
+    margin-top:60px !important;
+}
+.border-top {
+    border-top: 1px solid rgba(0, 0, 0, .12);
+}
+
+.padding-12 {
+    padding: 12px;
+}
+
+.display-inline-block {
+    display: inline-block !important;
+}
+
+.margin-5 {
+    margin: 10px;
+}
+
+.text-tequila-gold {
+    color: #c5a47e !important;
+}
+
+@media (max-width: 575.98px) { 
+    .row 
+    {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+   .our-misson   .misson-bg,.project-img  {
+       padding-left: 0px !important;
+       padding-right: 0px !important;
+   }
+   .Founders .Founders-title, .contact-us .contact-title
+   {
+       font-size: 40px !important;
+   }
+   .map
+   {
+       display:none;
+   }
+ }
+
+/*end base style*/
+.wow
+{
+    visibility: hidden;
+}
+.fas
+{
+    display: inline !important;
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: 0.1666fr 2fr;
+}
+.active 
+{
+    color: #c5a47e ;
+}
